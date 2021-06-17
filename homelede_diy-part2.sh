@@ -15,6 +15,10 @@ sed -i 's/192.168.1.1/192.168.100.3/g' package/base-files/files/bin/config_gener
 
 sed -i 's/CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=m/CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y/g' .config
 sed -i 's/CONFIG_PACKAGE_luci-app-unblockmusic=m/CONFIG_PACKAGE_luci-app-unblockmusic=y/g' .config
+sed -i '$a CONFIG_UnblockNeteaseMusic_NodeJS=y' .config
+sed -i '$a CONFIG_UnblockNeteaseMusic_Go=y' .config
+sed -i '$a CONFIG_PACKAGE_UnblockNeteaseMusicGo=y' .config
+sed -i '$a CONFIG_PACKAGE_UnblockNeteaseMusic=y' .config
 
 sed -i 's/CONFIG_GRUB_EFI_IMAGES=y/# CONFIG_GRUB_EFI_IMAGES is not set/g' .config
 
