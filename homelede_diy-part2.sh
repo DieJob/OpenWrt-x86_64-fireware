@@ -18,5 +18,7 @@ sed -i 's/CONFIG_PACKAGE_luci-app-unblockmusic=m/CONFIG_PACKAGE_luci-app-unblock
 
 sed -i 's/CONFIG_GRUB_EFI_IMAGES=y/# CONFIG_GRUB_EFI_IMAGES is not set/g' .config
 
-sed -i 's/CONFIG_PACKAGE_unzip=y/# CONFIG_PACKAGE_unzip is not set/g' .config
-sed -i 's/CONFIG_PACKAGE_unrar=y/# CONFIG_PACKAGE_unrar is not set/g' .config
+sed -i 's/CONFIG_USES_SQUASHFS=y/# CONFIG_USES_SQUASHFS is not set/g' .config
+sed -i 's/CONFIG_TARGET_ROOTFS_SQUASHFS=y/# CONFIG_TARGET_ROOTFS_SQUASHFS is not set/g' .config
+sed -i 's/CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=256/# CONFIG_TARGET_SQUASHFS_BLOCK_SIZE is not set/g' .config
+sed -i 's/CONFIG_KERNEL_SQUASHFS_FRAGMENT_CACHE_SIZE=3/# CONFIG_KERNEL_SQUASHFS_FRAGMENT_CACHE_SIZE is not set/g' .config
