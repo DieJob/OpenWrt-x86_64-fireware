@@ -17,3 +17,6 @@ sed -i 's/CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=m/CONFIG_PACKAGE_luci-i18n
 sed -i 's/CONFIG_PACKAGE_luci-app-unblockmusic=m/CONFIG_PACKAGE_luci-app-unblockmusic=y/g' .config
 
 sed -i 's/CONFIG_GRUB_EFI_IMAGES=y/# CONFIG_GRUB_EFI_IMAGES is not set/g' .config
+
+sed -i 's/CONFIG_PACKAGE_unzip=y/# CONFIG_PACKAGE_unzip is not set/g' .config
+sed -i 's/CONFIG_PACKAGE_unrar=y/# CONFIG_PACKAGE_unrar is not set/g' .config
