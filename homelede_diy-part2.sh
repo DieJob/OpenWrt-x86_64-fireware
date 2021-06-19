@@ -24,11 +24,3 @@ sed -i '$a CONFIG_PACKAGE_UnblockNeteaseMusicGo=y' .config
 sed -i '$a CONFIG_PACKAGE_UnblockNeteaseMusic=y' .config
 
 sed -i 's/CONFIG_GRUB_EFI_IMAGES=y/# CONFIG_GRUB_EFI_IMAGES is not set/g' .config
-
-sed -i 's/CONFIG_USES_SQUASHFS=y/# CONFIG_USES_SQUASHFS is not set/g' .config
-sed -i 's/CONFIG_TARGET_ROOTFS_SQUASHFS=y/# CONFIG_TARGET_ROOTFS_SQUASHFS is not set/g' .config
-sed -i 's/CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=256/# CONFIG_TARGET_SQUASHFS_BLOCK_SIZE is not set/g' .config
-sed -i 's/CONFIG_KERNEL_SQUASHFS_FRAGMENT_CACHE_SIZE=3/# CONFIG_KERNEL_SQUASHFS_FRAGMENT_CACHE_SIZE is not set/g' .config
-
-sed -i 's/CONFIG_USES_ROOTFS_PART=y/# CONFIG_USES_ROOTFS_PART is not set/g' .config
-sed -i 's/CONFIG_TARGET_ROOTFS_EXT4FS=y/# CONFIG_TARGET_ROOTFS_EXT4FS is not set/g' .config
