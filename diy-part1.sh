@@ -18,9 +18,10 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
 # app
-git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
-git clone https://github.com/immortalwrt/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
+git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
+rm -rf package/lean/luci-app-unblockmusic
+git clone https://github.com/immortalwrt/luci-app-unblockneteasemusic.git package/lean/luci-app-unblockmusic
 
 # theme
 rm -rf package/lean/luci-theme-argon  
